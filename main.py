@@ -10,4 +10,4 @@ async def root():
 
 @app.get("/redis")
 async def redis():
-    return r.get('pycon')
+    return r.get('event')

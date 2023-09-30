@@ -13,8 +13,8 @@ class Connection:
             host=services.REDIS["host"],
             port=int(services.REDIS["port"]),
             password=services.REDIS["password"],
-            socket_timeout=10,
-            socket_connect_timeout=10,
+            socket_timeout=2,
+            socket_connect_timeout=2,
             socket_keepalive=True,
             encoding="utf-8",
             decode_responses=True,  # To remove "b'" prefix as part of byte string
